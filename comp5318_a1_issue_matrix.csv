@@ -1,0 +1,9 @@
+Priority,Status,Area,Location,Issue,Action
+Critical,FAIL,Submission,Notebook filename,File name does not include group number,Rename to ml-project-group69.ipynb and export PDF as ml-project-group69.pdf
+Critical,FAIL,Submission,Cell 34-35,Final notebook still includes test-before local testing section,Delete the markdown and code cells for test-before before submission
+High,PARTIAL,Methodology,Cell 6 + model evaluation cells,Imputer and scaler are fit on full data before CV/split,Use Pipeline for evaluation while keeping printed preview unchanged
+High,FAIL,Discussion,Cell 37,Discussion is too generic and does not compare all classifiers with evidence,Replace final discussion with the provided evidence-based rewrite
+Medium,PARTIAL,Tuning,Cells 20/22/24/26/28/30,Several best hyperparameters are on search-grid boundaries,Explain boundary effect in discussion and optionally expand grid using CV only
+Medium,PARTIAL,Code style,Cell 12-13,Unnecessary final fit lines produce estimator repr outputs,Remove the extra fit lines or suppress their output
+Medium,PARTIAL,Code style,Cell 4 and later model cells,Repeated and unused imports reduce clarity,Consolidate imports and remove unused matplotlib import
+Low,PARTIAL,Output polish,Cell 8,Styled preview table is optional and may clutter exported PDF,Keep only if the exported PDF looks clean
