@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>comp5318-a1-2026-template</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7770,7 +7770,7 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Optional setup helper loaded.
-Python executable: D:\ProgramData\anaconda3\python.exe
+Python executable: d:\ProgramData\anaconda3\python.exe
 Python version: 3.12.7
 
 Installed package versions:
@@ -7828,6 +7828,7 @@ The printed first 10 rows verify that preprocessing has been applied correctly a
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
 <span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
 <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="c1"># Ignore future warnings</span>
 <span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">'ignore'</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
@@ -8033,154 +8034,154 @@ Class values: ['class1', 'class2']
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_27169 caption {
+#T_142ed caption {
   caption-side: top;
   font-size: 16px;
   font-weight: 600;
   color: #111827;
 }
-#T_27169 th {
+#T_142ed th {
   background-color: #1f2937;
   color: white;
   text-align: center;
   padding: 8px 10px;
 }
-#T_27169 td {
+#T_142ed td {
   text-align: center;
   padding: 8px 10px;
 }
-#T_27169 table {
+#T_142ed table {
   border-collapse: collapse;
   border: 1px solid #d1d5db;
   border-radius: 8px;
   overflow: hidden;
 }
 </style>
-<table id="T_27169">
+<table id="T_142ed">
 <caption>Pre-processed Dataset Preview</caption>
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_27169_level0_col0">Area</th>
-<th class="col_heading level0 col1" id="T_27169_level0_col1">Perimiter</th>
-<th class="col_heading level0 col2" id="T_27169_level0_col2">Major_Axis_Length</th>
-<th class="col_heading level0 col3" id="T_27169_level0_col3">Minor_Axis_Length</th>
-<th class="col_heading level0 col4" id="T_27169_level0_col4">Eccentricity</th>
-<th class="col_heading level0 col5" id="T_27169_level0_col5">Convex_Area</th>
-<th class="col_heading level0 col6" id="T_27169_level0_col6">Extent</th>
-<th class="col_heading level0 col7" id="T_27169_level0_col7">Class</th>
+<th class="col_heading level0 col0" id="T_142ed_level0_col0">Area</th>
+<th class="col_heading level0 col1" id="T_142ed_level0_col1">Perimiter</th>
+<th class="col_heading level0 col2" id="T_142ed_level0_col2">Major_Axis_Length</th>
+<th class="col_heading level0 col3" id="T_142ed_level0_col3">Minor_Axis_Length</th>
+<th class="col_heading level0 col4" id="T_142ed_level0_col4">Eccentricity</th>
+<th class="col_heading level0 col5" id="T_142ed_level0_col5">Convex_Area</th>
+<th class="col_heading level0 col6" id="T_142ed_level0_col6">Extent</th>
+<th class="col_heading level0 col7" id="T_142ed_level0_col7">Class</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_27169_level0_row0">0</th>
-<td class="data row0 col0" id="T_27169_row0_col0">0.4628</td>
-<td class="data row0 col1" id="T_27169_row0_col1">0.5406</td>
-<td class="data row0 col2" id="T_27169_row0_col2">0.5113</td>
-<td class="data row0 col3" id="T_27169_row0_col3">0.4803</td>
-<td class="data row0 col4" id="T_27169_row0_col4">0.7380</td>
-<td class="data row0 col5" id="T_27169_row0_col5">0.4699</td>
-<td class="data row0 col6" id="T_27169_row0_col6">0.1196</td>
-<td class="data row0 col7" id="T_27169_row0_col7">1</td>
+<th class="row_heading level0 row0" id="T_142ed_level0_row0">0</th>
+<td class="data row0 col0" id="T_142ed_row0_col0">0.4628</td>
+<td class="data row0 col1" id="T_142ed_row0_col1">0.5406</td>
+<td class="data row0 col2" id="T_142ed_row0_col2">0.5113</td>
+<td class="data row0 col3" id="T_142ed_row0_col3">0.4803</td>
+<td class="data row0 col4" id="T_142ed_row0_col4">0.7380</td>
+<td class="data row0 col5" id="T_142ed_row0_col5">0.4699</td>
+<td class="data row0 col6" id="T_142ed_row0_col6">0.1196</td>
+<td class="data row0 col7" id="T_142ed_row0_col7">1</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_27169_level0_row1">1</th>
-<td class="data row1 col0" id="T_27169_row1_col0">0.4900</td>
-<td class="data row1 col1" id="T_27169_row1_col1">0.5547</td>
-<td class="data row1 col2" id="T_27169_row1_col2">0.5266</td>
-<td class="data row1 col3" id="T_27169_row1_col3">0.5018</td>
-<td class="data row1 col4" id="T_27169_row1_col4">0.7319</td>
-<td class="data row1 col5" id="T_27169_row1_col5">0.4926</td>
-<td class="data row1 col6" id="T_27169_row1_col6">0.8030</td>
-<td class="data row1 col7" id="T_27169_row1_col7">1</td>
+<th class="row_heading level0 row1" id="T_142ed_level0_row1">1</th>
+<td class="data row1 col0" id="T_142ed_row1_col0">0.4900</td>
+<td class="data row1 col1" id="T_142ed_row1_col1">0.5547</td>
+<td class="data row1 col2" id="T_142ed_row1_col2">0.5266</td>
+<td class="data row1 col3" id="T_142ed_row1_col3">0.5018</td>
+<td class="data row1 col4" id="T_142ed_row1_col4">0.7319</td>
+<td class="data row1 col5" id="T_142ed_row1_col5">0.4926</td>
+<td class="data row1 col6" id="T_142ed_row1_col6">0.8030</td>
+<td class="data row1 col7" id="T_142ed_row1_col7">1</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_27169_level0_row2">2</th>
-<td class="data row2 col0" id="T_27169_row2_col0">0.6109</td>
-<td class="data row2 col1" id="T_27169_row2_col1">0.6847</td>
-<td class="data row2 col2" id="T_27169_row2_col2">0.6707</td>
-<td class="data row2 col3" id="T_27169_row2_col3">0.5409</td>
-<td class="data row2 col4" id="T_27169_row2_col4">0.8032</td>
-<td class="data row2 col5" id="T_27169_row2_col5">0.6253</td>
-<td class="data row2 col6" id="T_27169_row2_col6">0.1185</td>
-<td class="data row2 col7" id="T_27169_row2_col7">0</td>
+<th class="row_heading level0 row2" id="T_142ed_level0_row2">2</th>
+<td class="data row2 col0" id="T_142ed_row2_col0">0.6109</td>
+<td class="data row2 col1" id="T_142ed_row2_col1">0.6847</td>
+<td class="data row2 col2" id="T_142ed_row2_col2">0.6707</td>
+<td class="data row2 col3" id="T_142ed_row2_col3">0.5409</td>
+<td class="data row2 col4" id="T_142ed_row2_col4">0.8032</td>
+<td class="data row2 col5" id="T_142ed_row2_col5">0.6253</td>
+<td class="data row2 col6" id="T_142ed_row2_col6">0.1185</td>
+<td class="data row2 col7" id="T_142ed_row2_col7">0</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_27169_level0_row3">3</th>
-<td class="data row3 col0" id="T_27169_row3_col0">0.6466</td>
-<td class="data row3 col1" id="T_27169_row3_col1">0.6930</td>
-<td class="data row3 col2" id="T_27169_row3_col2">0.6677</td>
-<td class="data row3 col3" id="T_27169_row3_col3">0.5961</td>
-<td class="data row3 col4" id="T_27169_row3_col4">0.7601</td>
-<td class="data row3 col5" id="T_27169_row3_col5">0.6467</td>
-<td class="data row3 col6" id="T_27169_row3_col6">0.2669</td>
-<td class="data row3 col7" id="T_27169_row3_col7">0</td>
+<th class="row_heading level0 row3" id="T_142ed_level0_row3">3</th>
+<td class="data row3 col0" id="T_142ed_row3_col0">0.6466</td>
+<td class="data row3 col1" id="T_142ed_row3_col1">0.6930</td>
+<td class="data row3 col2" id="T_142ed_row3_col2">0.6677</td>
+<td class="data row3 col3" id="T_142ed_row3_col3">0.5961</td>
+<td class="data row3 col4" id="T_142ed_row3_col4">0.7601</td>
+<td class="data row3 col5" id="T_142ed_row3_col5">0.6467</td>
+<td class="data row3 col6" id="T_142ed_row3_col6">0.2669</td>
+<td class="data row3 col7" id="T_142ed_row3_col7">0</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_27169_level0_row4">4</th>
-<td class="data row4 col0" id="T_27169_row4_col0">0.6712</td>
-<td class="data row4 col1" id="T_27169_row4_col1">0.6233</td>
-<td class="data row4 col2" id="T_27169_row4_col2">0.4755</td>
-<td class="data row4 col3" id="T_27169_row4_col3">0.8293</td>
-<td class="data row4 col4" id="T_27169_row4_col4">0.3721</td>
-<td class="data row4 col5" id="T_27169_row4_col5">0.6803</td>
-<td class="data row4 col6" id="T_27169_row4_col6">0.4211</td>
-<td class="data row4 col7" id="T_27169_row4_col7">1</td>
+<th class="row_heading level0 row4" id="T_142ed_level0_row4">4</th>
+<td class="data row4 col0" id="T_142ed_row4_col0">0.6712</td>
+<td class="data row4 col1" id="T_142ed_row4_col1">0.6233</td>
+<td class="data row4 col2" id="T_142ed_row4_col2">0.4755</td>
+<td class="data row4 col3" id="T_142ed_row4_col3">0.8293</td>
+<td class="data row4 col4" id="T_142ed_row4_col4">0.3721</td>
+<td class="data row4 col5" id="T_142ed_row4_col5">0.6803</td>
+<td class="data row4 col6" id="T_142ed_row4_col6">0.4211</td>
+<td class="data row4 col7" id="T_142ed_row4_col7">1</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_27169_level0_row5">5</th>
-<td class="data row5 col0" id="T_27169_row5_col0">0.2634</td>
-<td class="data row5 col1" id="T_27169_row5_col1">0.2932</td>
-<td class="data row5 col2" id="T_27169_row5_col2">0.2414</td>
-<td class="data row5 col3" id="T_27169_row5_col3">0.4127</td>
-<td class="data row5 col4" id="T_27169_row5_col4">0.5521</td>
-<td class="data row5 col5" id="T_27169_row5_col5">0.2752</td>
-<td class="data row5 col6" id="T_27169_row5_col6">0.2825</td>
-<td class="data row5 col7" id="T_27169_row5_col7">1</td>
+<th class="row_heading level0 row5" id="T_142ed_level0_row5">5</th>
+<td class="data row5 col0" id="T_142ed_row5_col0">0.2634</td>
+<td class="data row5 col1" id="T_142ed_row5_col1">0.2932</td>
+<td class="data row5 col2" id="T_142ed_row5_col2">0.2414</td>
+<td class="data row5 col3" id="T_142ed_row5_col3">0.4127</td>
+<td class="data row5 col4" id="T_142ed_row5_col4">0.5521</td>
+<td class="data row5 col5" id="T_142ed_row5_col5">0.2752</td>
+<td class="data row5 col6" id="T_142ed_row5_col6">0.2825</td>
+<td class="data row5 col7" id="T_142ed_row5_col7">1</td>
 </tr>
 <tr>
-<th class="row_heading level0 row6" id="T_27169_level0_row6">6</th>
-<td class="data row6 col0" id="T_27169_row6_col0">0.8175</td>
-<td class="data row6 col1" id="T_27169_row6_col1">0.9501</td>
-<td class="data row6 col2" id="T_27169_row6_col2">0.9515</td>
-<td class="data row6 col3" id="T_27169_row6_col3">0.5925</td>
-<td class="data row6 col4" id="T_27169_row6_col4">0.9245</td>
-<td class="data row6 col5" id="T_27169_row6_col5">0.8162</td>
-<td class="data row6 col6" id="T_27169_row6_col6">0.0000</td>
-<td class="data row6 col7" id="T_27169_row6_col7">0</td>
+<th class="row_heading level0 row6" id="T_142ed_level0_row6">6</th>
+<td class="data row6 col0" id="T_142ed_row6_col0">0.8175</td>
+<td class="data row6 col1" id="T_142ed_row6_col1">0.9501</td>
+<td class="data row6 col2" id="T_142ed_row6_col2">0.9515</td>
+<td class="data row6 col3" id="T_142ed_row6_col3">0.5925</td>
+<td class="data row6 col4" id="T_142ed_row6_col4">0.9245</td>
+<td class="data row6 col5" id="T_142ed_row6_col5">0.8162</td>
+<td class="data row6 col6" id="T_142ed_row6_col6">0.0000</td>
+<td class="data row6 col7" id="T_142ed_row6_col7">0</td>
 </tr>
 <tr>
-<th class="row_heading level0 row7" id="T_27169_level0_row7">7</th>
-<td class="data row7 col0" id="T_27169_row7_col0">0.3174</td>
-<td class="data row7 col1" id="T_27169_row7_col1">0.3588</td>
-<td class="data row7 col2" id="T_27169_row7_col2">0.3601</td>
-<td class="data row7 col3" id="T_27169_row7_col3">0.3908</td>
-<td class="data row7 col4" id="T_27169_row7_col4">0.6921</td>
-<td class="data row7 col5" id="T_27169_row7_col5">0.3261</td>
-<td class="data row7 col6" id="T_27169_row7_col6">0.8510</td>
-<td class="data row7 col7" id="T_27169_row7_col7">1</td>
+<th class="row_heading level0 row7" id="T_142ed_level0_row7">7</th>
+<td class="data row7 col0" id="T_142ed_row7_col0">0.3174</td>
+<td class="data row7 col1" id="T_142ed_row7_col1">0.3588</td>
+<td class="data row7 col2" id="T_142ed_row7_col2">0.3601</td>
+<td class="data row7 col3" id="T_142ed_row7_col3">0.3908</td>
+<td class="data row7 col4" id="T_142ed_row7_col4">0.6921</td>
+<td class="data row7 col5" id="T_142ed_row7_col5">0.3261</td>
+<td class="data row7 col6" id="T_142ed_row7_col6">0.8510</td>
+<td class="data row7 col7" id="T_142ed_row7_col7">1</td>
 </tr>
 <tr>
-<th class="row_heading level0 row8" id="T_27169_level0_row8">8</th>
-<td class="data row8 col0" id="T_27169_row8_col0">0.3130</td>
-<td class="data row8 col1" id="T_27169_row8_col1">0.3050</td>
-<td class="data row8 col2" id="T_27169_row8_col2">0.2150</td>
-<td class="data row8 col3" id="T_27169_row8_col3">0.5189</td>
-<td class="data row8 col4" id="T_27169_row8_col4">0.3974</td>
-<td class="data row8 col5" id="T_27169_row8_col5">0.3159</td>
-<td class="data row8 col6" id="T_27169_row8_col6">0.4570</td>
-<td class="data row8 col7" id="T_27169_row8_col7">1</td>
+<th class="row_heading level0 row8" id="T_142ed_level0_row8">8</th>
+<td class="data row8 col0" id="T_142ed_row8_col0">0.3130</td>
+<td class="data row8 col1" id="T_142ed_row8_col1">0.3050</td>
+<td class="data row8 col2" id="T_142ed_row8_col2">0.2150</td>
+<td class="data row8 col3" id="T_142ed_row8_col3">0.5189</td>
+<td class="data row8 col4" id="T_142ed_row8_col4">0.3974</td>
+<td class="data row8 col5" id="T_142ed_row8_col5">0.3159</td>
+<td class="data row8 col6" id="T_142ed_row8_col6">0.4570</td>
+<td class="data row8 col7" id="T_142ed_row8_col7">1</td>
 </tr>
 <tr>
-<th class="row_heading level0 row9" id="T_27169_level0_row9">9</th>
-<td class="data row9 col0" id="T_27169_row9_col0">0.5120</td>
-<td class="data row9 col1" id="T_27169_row9_col1">0.5237</td>
-<td class="data row9 col2" id="T_27169_row9_col2">0.4409</td>
-<td class="data row9 col3" id="T_27169_row9_col3">0.6235</td>
-<td class="data row9 col4" id="T_27169_row9_col4">0.5460</td>
-<td class="data row9 col5" id="T_27169_row9_col5">0.5111</td>
-<td class="data row9 col6" id="T_27169_row9_col6">0.3155</td>
-<td class="data row9 col7" id="T_27169_row9_col7">1</td>
+<th class="row_heading level0 row9" id="T_142ed_level0_row9">9</th>
+<td class="data row9 col0" id="T_142ed_row9_col0">0.5120</td>
+<td class="data row9 col1" id="T_142ed_row9_col1">0.5237</td>
+<td class="data row9 col2" id="T_142ed_row9_col2">0.4409</td>
+<td class="data row9 col3" id="T_142ed_row9_col3">0.6235</td>
+<td class="data row9 col4" id="T_142ed_row9_col4">0.5460</td>
+<td class="data row9 col5" id="T_142ed_row9_col5">0.5111</td>
+<td class="data row9 col6" id="T_142ed_row9_col6">0.3155</td>
+<td class="data row9 col7" id="T_142ed_row9_col7">1</td>
 </tr>
 </tbody>
 </table>
@@ -8861,7 +8862,7 @@ SVM test set accuracy: 0.9321
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Visualize the reported model results without changing the evaluation logic.</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
 
 <span class="k">def</span> <span class="nf">add_value_labels</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="mf">0.0012</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Add 4-decimal labels above bars for readability."""</span>
@@ -9134,7 +9135,7 @@ SVM test set accuracy: 0.9321
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4.-AI-Acknowledgment"><strong>4. AI Acknowledgment</strong><a class="anchor-link" href="#4.-AI-Acknowledgment">¶</a></h2><p>AI-based tools were used to support editing, wording refinement, and code review during preparation of this notebook. All modelling decisions, final code, and submitted content were checked and revised by the authors before submission.</p>
+<h2 id="4.-AI-Acknowledgment"><strong>4. AI Acknowledgment</strong><a class="anchor-link" href="#4.-AI-Acknowledgment">¶</a></h2><p>AI-based tools were used to support editing, wording refinement, and code review during preparation of this notebook.</p>
 </div>
 </div>
 </div>
